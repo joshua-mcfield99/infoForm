@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Infomation form</title>
+</head>
+<body>
+  
+  <div class="container">
+    <div class="heading">
+      <h1>About you...</h1>
+    </div>
+    
+    <form action="/index.html" method="GET" id="form">
+      <div class="form_title">
+        <label for="Title">Title</label>
+        <select class="title-control" id="Title">
+          <option>--</option>
+          <option>Mr</option>
+          <option>Mrs</option>
+          <option>Miss</option>
+          <option>Other</option>
+        </select>
+      </div>
+     
+      <div class="text_input">
+                <label for="firstName">First Name</label>
+          <input type="text" placeholder="First Name" id="firstName" name="firstName">
+        <label for="lastName">Last Name</label>
+          <input type="text" placeholder="Last Name" id="lastName" name="lastName">
+          <div id="error2"></div>
+        <label for="Email">Email</label>
+          <input type="email" placeholder="Email" id="Email" name="lastName">
+      </div>
+     
+      <div class="form-check"></div>
+        <label for="Intrests">Intrests</label>
+        <div class="form-check form-check-column" id="container">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="Sports" id="" value=1> Sports
+          </label>
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="Reading" id="" value=1> Reading
+          </label>
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="Hacking" id="" value=1> Hacking
+          </label>
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="Gaming" id="" value=1> Gaming
+          </label>
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="Other" id="" value=1 > Other
+          </label>
+        </div>
+       <div class="submit">
+        <button type="button" id="subButton" onClick="validateForm();"> Submit </button>
+        <div id="error"></div>
+      </div>
+    </div>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
